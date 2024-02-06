@@ -155,7 +155,8 @@ body {
 }
 
 .search input {
-  width: 90%;
+  width: 70%;
+
   height: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -163,7 +164,7 @@ body {
   border: none;
   outline: none;
   padding: .8em;
-  border-radius: .4rem;
+  border-radius: 1rem;
   transition: all .3s ease;
 }
 
@@ -181,10 +182,12 @@ body {
 .ri-search-2-line {
   position: absolute;
   color: white;
-  left: 20%;
+  left: 9%;
 }
 
 .ri-add-fill {
+  position: absolute;
+  right: 5%;
   color: white;
   font-size: 1.2em;
   width: 3rem;
@@ -194,7 +197,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5%;
   background-color: rgba(168, 168, 168, 0.1);
   transition: all .3s ease-out;
   backdrop-filter: blur(10px);
@@ -213,7 +215,7 @@ body {
 
 
 .users {
-  height: 12%;
+  height: 10vh;
   width: 100%;
   gap: 1em;
   align-items: center;
@@ -498,8 +500,9 @@ button {
 
 .btn1 {
   width: 40%;
-  background-color: var(--tertiary);
-  color: var(--secondary);
+  background-color: #378b29;
+background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+  color: #fff;
   margin-top: 10%;
 }
 
@@ -507,8 +510,12 @@ button {
 .span-mother2 span {
   font-size: 1.6em;
   font-family: bold;
-
+  height: min-content;
+  overflow: hidden;
+  
+  
 }
+
 
 
 button .span-mother {
@@ -521,7 +528,7 @@ button:hover .span-mother {
 }
 
 button:hover .span-mother span {
-  transform: translateY(1.2em);
+  transform: translateY(120%);
 }
 
 button .span-mother span:nth-child(1) {
@@ -556,7 +563,7 @@ button .span-mother2 {
 }
 
 button .span-mother2 span {
-  transform: translateY(-1.2em);
+  transform: translateY(-100%);
 }
 
 button:hover .span-mother2 span {
@@ -592,7 +599,7 @@ button .span-mother2 span:nth-child(6) {
 
 .machan-v {
   position: absolute;
-  right: 2%;
+  left: 2%;
   top: 3%;
   width: 20%;
   height: 10%;
@@ -711,9 +718,10 @@ button .span-mother2 span:nth-child(6) {
   display: grid;
   border: 2px solid #76767669;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.05);
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  background-color: transparent;
   place-content: center;
-  backdrop-filter: blur(10 px);
+  backdrop-filter: blur(20px);
   /* filter: drop-shadow(0 0 0px white); */
 }
 
@@ -725,7 +733,8 @@ button .span-mother2 span:nth-child(6) {
   text-shadow: 0 0 10px white;
   text-shadow: 0 0 10px black;
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(60,213,175,1) 100%);-webkit-background-clip: text;
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(60,213,175,1) 100%);
+-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
@@ -782,7 +791,3 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(60,213,175,1) 10
 }
 
 
-.pright-type i:hover {
-  transform: translateY(-50%) rotate(90deg);
-
-}
